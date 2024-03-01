@@ -61,6 +61,7 @@ class _ImageCollageWidget extends State<ImageCollageWidget>
         bloc: _imageListBloc,
         builder: (context, CollageState state) {
           if (state is PermissionDeniedState) {
+            print("yes");
             return Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
